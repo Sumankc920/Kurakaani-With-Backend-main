@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400&display=swap');
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.login-section {
+    height : 100vh;
+    width : 100vw;
+    background-color: #d9a7c7;
+    overflow : hidden;
+    font-family : Averia Serif Libre , sans-serif;
+}
+
+.main-container {
+    height : 100%;
+    width : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.main-container__info-container {
+    width : 45%;
+    display : none;
+}
+
+.main-container__info-container h2 {
+    width : 90%;
+    margin : 0 5%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight : 400;
+    font-size : 200%
+}
+
+.main-container__login-container {
+    margin : 0 5%;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.login-form-container {
+    width : 300px;
+    height : 335px;
+    padding : 5px;
+    display : flex;
+    /* background-color : #dddddd;
+    border-radius : 8px;
+    box-shadow: 1px 1px 1px 4px #fff; */
+    justify-content : center;
+    align-items : top;
+}
+
+/*
+.invalid-info {
+    margin-bottom : 10px;
+    text-align : center;
+    color : red;
+    visibility : hidden;
+}
+*/
+
+
+.email-container {
+    margin-bottom : 15px;
+    position: relative;
+}
+
+
+.standard-email-tooltip , .standard-password-tooltip {
+    position: absolute;
+    background-color: #ddd;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width : 250px;
+    padding: 5px;
+    display: none;
+}
+
+.standard-email-tooltip {
+    bottom: 50px;
+}
+
+.standard-password-tooltip {
+    bottom : 110px;
+}
+
+.email-container:hover .standard-email-tooltip {
+    display: block;
+}
+
+.password-container:hover .standard-password-tooltip {
+    display: block;
+}
+
+.or {
+    width : 250px;
+    font-family : Averia Serif Libre , sans-serif;
+}
+
+.email , .password , .create-account-button , .login-button {
+    padding : 10px;
+    background-color: #fff;
+    border : 1px solid #fff;
+    width : 250px;
+    font-family : Averia Serif Libre , sans-serif;
+    border-radius : 4px;
+    outline : none;
+    font-size : 100%;
+}
+
+.password-container {
+    margin-bottom : 15px;
+    position: relative;
+}
+
+.create-account-button-container {
+    margin-top : 15px;
+}
+
+.create-account-button {
+    background-color: #0074D9;
+    cursor : pointer;
+    border : 1px solid #0074D9;
+} 
+
+.login-button {
+    background-color: #01FF70 ;
+    cursor : pointer;
+    border : 1px solid #01FF70;
+}
+
+
+.link-to-message {
+    text-decoration: none;
+}
+
+@media only screen and (min-width : 375px) {
+
+    .login-form-container {
+        width : 320px;
+    }
+
+    .email , .password , .create-account-button , .login-button {
+        width : 270px;
+     }
+      
+    
+}
+
+@media only screen and (min-width : 425px) {
+    .login-form-container {
+        width : 350px;
+    }
+    .email , .password , .create-account-button , .login-button {
+        width : 300px;
+    }
+    
+}
+
+@media only screen and (min-width : 500px) {
+    .login-form-container {
+        background-color : #dddddd;
+        border-radius : 8px;
+        box-shadow: 1px 1px 1px 4px #fff;
+        align-items : center;
+    }
+    
+}
+
+@media only screen and (min-width : 650px) {
+    .login-form-container {
+        width : 300px;
+    }
+    .email , .password , .create-account-button , .login-button {
+        width : 250px;
+    }
+    .login-form-container {
+        background-color : #dddddd;
+        border-radius : 8px;
+        box-shadow: 1px 1px 1px 4px #fff;
+        align-items : center;
+    }
+    .main-container__info-container {
+        display : block;
+    }
+    
+    .main-container__info-container h2 {
+        font-size : 140%;
+    }
+}
+
+

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.popup-container {
+    position: absolute;
+    top: 40%;
+    left : 20%;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding : 5px;
+    height: 80px;
+    width : 60%;
+    z-index: 3;
+}
+
+.layer {
+    height: 100vh;
+    width : 100vw;
+    background-color: #000;
+    opacity: 0.9;
+    z-index: 2;
+    position: absolute;
+}
+
+.popup-container h3 {
+    padding-top: 5px;
+    font-size: 90%;
+}
+
+.popup-button-container {
+    text-align: center;
+    padding-top : 15px;
+}
+
+.popup-button {
+    padding : 5px 7px;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+
+.popup-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family : Kiwi Maru , sans-serif;
+    height : 100vh;
+    width : 100vw;
+    overflow : hidden;
+}
+
+.new-account-section {
+    height : 100%;
+    width : 100%;
+    overflow : scroll;
+    background-color: #d9a7c7;
+}
+
+.main-container {
+    height : 100%;
+    width : 100%;
+    display : flex;
+    justify-content : center;
+    align-items : top;
+}
+
+.new-account-form-container {
+    height : 600px;
+    width : 440px;
+    /* background-color: #fff;
+    border-radius : 10px;
+    box-shadow : 5px 4px 1px 1px rgba(0, 0, 0, 0.226); */
+}
+
+.new-account-form {
+    height : 100%;
+    width : 100%;
+    padding : 10px;
+    text-align: center;
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+}
+
+.new-account-form div {
+    margin-top : 40px;
+}
+
+.email , .password , .button , .add-icon-text {
+    padding : 10px;
+    /* background-color: #dddddd; */
+    background-color: #fff;
+    border-radius : 4px;
+    /* width : 300px; */
+    width : 250px;
+    outline : none;
+    /* border : 1px solid #dddddd; */
+    border : 1px solid #fff;
+    font-size : 90%;
+    font-family : Kiwi Maru , sans-serif;
+}
+
+.first-name , .last-name {
+    width : 125px;
+    padding : 10px;
+/*     background-color: #dddddd; */
+    background-color: #fff;
+    border-radius : 4px;
+    /* width : 300px; */
+    outline : none;
+    /* border : 1px solid #dddddd; */
+    border : 1px solid #fff;
+    font-size : 90%;
+    font-family : Kiwi Maru , sans-serif;
+}
+
+
+.button {
+    cursor : pointer;
+}
+
+.button:hover {
+    background-color: green;    
+}
+
+.confirm-password-container {
+    position : relative;
+}
+
+.password-no-match {
+    position : absolute;
+    top : -25px;
+    left : 19%;
+    color : #000;
+    /* display : none; */
+/*    visibility: hidden;*/
+    display: none;
+}
+
+.password-no-match-active {
+    display : block;
+}
+
+.drop-file-layer {
+    height : 100vh;
+    width : 100vw;
+    z-index : 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border : 2px dashed #000;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    visibility : hidden;
+}
+
+
+@media only screen and (min-width : 375px) {
+    .email , .password , .button , .add-icon-text {
+        width : 270px;
+    }
+    .first-name , .last-name {
+        width : 135px;
+    }
+}
+
+@media only screen and (min-width : 425px) {
+    .email , .password , .button , .add-icon-text {
+        width : 300px;
+    }
+    .first-name , .last-name {
+        width : 150px;
+    }
+}
+
+@media only screen and (min-width : 500px) {
+    .main-container {
+        align-items : center;
+    }
+    .new-account-form-container {
+        background-color: #fff;
+        border-radius : 10px;
+        box-shadow : 5px 4px 1px 1px rgba(0, 0, 0, 0.226);
+    }
+
+    .email , .password , .button , .add-icon-text {
+        background-color: #dddddd;
+        width : 300px;
+        border : 1px solid #dddddd;
+        font-size: 100%;
+    }
+    
+    .first-name , .last-name {
+        width : 150px;
+        background-color: #dddddd;
+        border : 1px solid #dddddd;
+        font-size : 100%;
+    }
+}
